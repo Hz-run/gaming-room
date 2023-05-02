@@ -1,0 +1,24 @@
+<div class="navbar">
+  <h2>Bienvenu dans la GAMING ROOM 🕹</h2>
+</div>
+
+maintenant faut coder la navbar
+<div class="container p-5">
+  <h2>Dernières offres </h2>
+  <br>
+  <div class="cards">
+    <% @offers.each do |offer| %>
+      <div class="card-offer">
+          <%= offer.picture_seed ? image_tag(offer.picture_seed.split(",").first) : cl_image_tag(offer.picture_url.first.key) %>
+        <div class="card-offer-infos">
+          <div>
+            <h2><%= link_to offer.title.capitalize, offer_path(offer)  %></h2>
+            <h3><%= offer.location %></h3>
+            <h4 class="card-offer-pricing"><%= offer.price %> € / day</h4>
+            <i class="far fa-heart card-heart"></i>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
