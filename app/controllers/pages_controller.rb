@@ -6,8 +6,4 @@ class PagesController < ApplicationController
     @offers = Offer.last(3)
   end
 
-  def dashboard
-    # @my_offers = Offer.where(user: current_user)
-    # @bookings = Booking.where(user: current_user)
-  end
 end
