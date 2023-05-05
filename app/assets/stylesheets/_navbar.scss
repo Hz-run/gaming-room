@@ -7,7 +7,20 @@
 }
 
 #connexion {
-  color: white;
+  color: aquamarine;
+  color: aquamarine;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 4px 10px 4px 10px;
+
 }
 
+.title {
+  color: aquamarine;
+  text-shadow: 0px 0px 5px aquamarine ;
+}
 
+#connexion:hover {
+  color: rgb(224, 56, 56);
+  text-shadow: 0px 0px 5px red ;
+}
